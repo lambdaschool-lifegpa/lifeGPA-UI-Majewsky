@@ -1,0 +1,47 @@
+.landing-page-button(@btn-bg-color, @btn-color) {
+    background-color: desaturate(@btn-bg-color, 30%);
+    color: @btn-color;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    -webkit-animation-name: yellowPulse;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+
+    &:hover{
+        background-color: desaturate(@btn-bg-color, 15%);
+    }
+
+    &:focus{
+        background-color: @btn-bg-color;
+    }
+
+    @-webkit-keyframes yellowPulse {
+        from { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 3px @pulse-glow-deactivated; }
+        50% { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 10px @pulse-glow-activated; }
+        to { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 6px @pulse-glow-deactivated; }
+    }
+}
+
+.sufficiently-spaced-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-spreaded-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-element {
+    display: none;
+}
+
+.recenter {
+    justify-content: center;
+}
