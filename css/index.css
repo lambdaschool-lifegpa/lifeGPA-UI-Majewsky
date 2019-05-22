@@ -348,6 +348,16 @@ html body .subtitle {
   transform: translateX(0%);
   display: flex;
 }
+.blur-content {
+  position: fixed;
+  z-index: -1;
+  width: 110vw;
+  height: 100vh;
+  background-color: #6b1d1d;
+  opacity: 0.4;
+  transform: translateX(-7%);
+  padding-top: 8rem;
+}
 body .header {
   display: flex;
   justify-content: space-between;
@@ -401,6 +411,8 @@ body .home-main-section .call-to-action {
 @media (max-width: 500px) {
   body .home-main-section .call-to-action {
     margin-top: 3.5rem;
+    margin-left: 0rem;
+    padding-left: 1.5rem;
   }
 }
 @media (max-width: 374px) {
