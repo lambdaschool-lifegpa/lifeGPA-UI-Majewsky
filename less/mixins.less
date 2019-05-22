@@ -25,6 +25,13 @@
         50% { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 10px @pulse-glow-activated; }
         to { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 6px @pulse-glow-deactivated; }
     }
+
+    @media @whatdeviceissotiny {
+        height: 10vh;
+        width: 40vw;
+        padding-bottom: 0.5em;
+        padding-left: 0px;
+    }
 }
 
 .sufficiently-spaced-row {
@@ -67,7 +74,7 @@
     border: 1px dashed @accent-yellow;
     border-right: none;
     margin-top: 1rem;
-    padding-bottom: 50vh;
+    max-height: 50vh;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     display: none;

@@ -40,14 +40,32 @@ html {
                 color: inherit;
                 text-decoration: none;
 
+                @media @whatdeviceissotiny {
+                    flex-direction: column;
+                }
+
                 .brand-logo-name {
                     color: @accent-yellow;
                     font-size: 2rem;
                     margin-left: 1rem;
 
+                    @media @whatdeviceissotiny {
+                        margin-top: 1.5rem;
+                        font-size: 8vw;
+                    }
+
                     .brand-logo-name-bold {
                         font-weight: bold;
                     }
+                }
+
+                img {
+                    
+                @media @whatdeviceissotiny {
+                    max-height: 30vh;
+                    max-width: 35vw;
+                    margin-right: 10vw;
+                }
                 }
             }
         }
@@ -60,6 +78,14 @@ html {
         
             .accent {
                 color: @accent-yellow;
+
+                @media @whatdeviceissotiny {
+                    font-size: 10vw;
+                }
+            }
+
+            @media @whatdeviceissotiny {
+                font-size: 8vw;
             }
         }
         
@@ -67,6 +93,10 @@ html {
             font-weight: 500;
             font-size: 1.2em;
             margin-bottom: 2rem;
+
+            @media @whatdeviceissotiny {
+                font-size: 5vw;
+            }
         }
     }
 }
