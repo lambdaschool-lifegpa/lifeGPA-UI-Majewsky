@@ -1,6 +1,8 @@
-
 html {
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
         box-sizing: border-box;
     }
 
@@ -19,6 +21,14 @@ html {
         background-image: url('../assets/bg-images/background-image-halftone-yellow.png');
     }
 
+    .container-secondary {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        flex-grow: 1;
+        background-image: url('../assets/bg-images/background-image-brush-yellow-long.png');
+    }
+
     body {
         padding: 0;
         margin: 0;
@@ -29,11 +39,11 @@ html {
         min-height: 100vh;
         overflow-x: hidden;
 
-        
-        .header{
+
+        .header {
             height: 140px;
 
-            .brand-logo{
+            .brand-logo {
                 display: flex;
                 align-items: center;
                 font-size: 1.25em;
@@ -60,12 +70,12 @@ html {
                 }
 
                 img {
-                    
-                @media @whatdeviceissotiny {
-                    max-height: 30vh;
-                    max-width: 35vw;
-                    margin-right: 10vw;
-                }
+
+                    @media @whatdeviceissotiny {
+                        max-height: 30vh;
+                        max-width: 35vw;
+                        margin-right: 10vw;
+                    }
                 }
             }
         }
@@ -75,7 +85,7 @@ html {
             font-size: 3em;
             margin-bottom: 1rem;
             margin-top: 0;
-        
+
             .accent {
                 color: @accent-yellow;
 
@@ -88,7 +98,7 @@ html {
                 font-size: 8vw;
             }
         }
-        
+
         .subtitle {
             font-weight: 500;
             font-size: 1.2em;

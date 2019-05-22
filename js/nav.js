@@ -13,7 +13,7 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
                 mainSection.classList.remove('blur-content');
-            } else { 
+            } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
                 mainSection.classList.add('blur-content');
             }

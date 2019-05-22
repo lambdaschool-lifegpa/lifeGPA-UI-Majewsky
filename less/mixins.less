@@ -12,18 +12,29 @@
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
 
-    &:hover{
+    &:hover {
         background-color: desaturate(@btn-bg-color, 15%);
     }
 
-    &:focus{
+    &:focus {
         background-color: @btn-bg-color;
     }
 
     @-webkit-keyframes yellowPulse {
-        from { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 3px @pulse-glow-deactivated; }
-        50% { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 10px @pulse-glow-activated; }
-        to { background-color: @btn-bg-color; -webkit-box-shadow: 0 0 6px @pulse-glow-deactivated; }
+        from {
+            background-color: @btn-bg-color;
+            -webkit-box-shadow: 0 0 3px @pulse-glow-deactivated;
+        }
+
+        50% {
+            background-color: @btn-bg-color;
+            -webkit-box-shadow: 0 0 10px @pulse-glow-activated;
+        }
+
+        to {
+            background-color: @btn-bg-color;
+            -webkit-box-shadow: 0 0 6px @pulse-glow-deactivated;
+        }
     }
 
     @media @whatdeviceissotiny {
@@ -81,25 +92,26 @@
 }
 
 // animations:
-@keyframes navLinkFade{
-    from{
+@keyframes navLinkFade {
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.toggle .line-one{
+.toggle .line-one {
     transform: rotate(-45deg) translate(-13px, 12px);
 }
 
-.toggle .line-two{
+.toggle .line-two {
     opacity: 0;
 }
 
-.toggle .line-three{
+.toggle .line-three {
     transform: rotate(45deg) translate(-5px, -6px);
 }
