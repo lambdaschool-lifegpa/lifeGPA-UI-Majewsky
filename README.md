@@ -13,6 +13,8 @@ The application allows a user to assess his life quality by several metrics and 
 * [LESS](http://lesscss.org/) - Preprocessor used to write the CSS efficiently
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Language used to make the webpage interactive
 * [Glider.js](https://nickpiscitelli.github.io/Glider.js/) - Carousel functionalities
+* [Bootstrap](https://getbootstrap.com/) - Team Page Column Positioning
+* [Font Awesome](https://fontawesome.com/) - Easy to access icons
 
 ## Project Requirements
 
