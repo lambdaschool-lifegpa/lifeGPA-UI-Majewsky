@@ -1,0 +1,102 @@
+body {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .team-main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media @tablet {
+            .recenter
+        }
+
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: @white;
+            padding-bottom: 10px;
+            text-decoration: underline;
+            margin-top: 4vh;
+
+            h1::after {
+                content: '';
+                background: #333;
+                display: block;
+                height: 3px;
+                width: 150px;
+                margin: 10px auto
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+
+            .accent {
+                color: @accent-yellow;
+            }
+
+        }
+
+        .container-x {
+            background-color: @team-bg;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+
+
+            img {
+                height: 15vh;
+                width: auto;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            a {
+                margin-left: 1.9rem;
+                margin-right: 1.9rem;
+            }
+
+
+            .row {
+                display: flex;
+                justify-content: center;
+
+                .profile {
+                    margin-left: 0.5vw;
+                    margin-right: 0.5vw;
+                }
+
+                .fa-github {
+                    color: white;
+                }
+
+                .fa-linkedin {
+                    color: white;
+                }
+            }
+
+            .second-row {
+                margin-top: 3rem;
+            }
+
+            .third-row {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+
+                @media @whatdeviceissotiny {
+                    margin-top: 1.5rem;
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+}
