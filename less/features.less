@@ -61,7 +61,7 @@ body {
 
       .tabs-items {
         width: 100%;
-        height: 25rem;
+        height: 35rem;
         display: flex;
         justify-content: center;
         padding-top: 60px;
@@ -69,12 +69,16 @@ body {
         border: 1px solid @black;
 
         @media @tablet {
-          height: 38rem;
+          height: 50rem;
         }
 
         @media @mobile {
-          height: 29rem;
+          height: 50rem;
           padding-top: 20px;
+        }
+
+        @media @whatdeviceissotiny {
+          height: 70rem;
         }
       }
 
@@ -97,9 +101,16 @@ body {
         }
 
         .tabs-item-description {
+          line-height: 1.8rem;
+
           @media @mobile {
             font-size: 3.5vw;
           }
+
+          @media @whatdeviceissotiny {
+            line-height: 1rem;
+          }
+
         }
 
       }
@@ -138,8 +149,9 @@ body {
         }
 
         @media @tablet {
-          font-size: 3vw;
+          font-size: 2vw;
         }
+
       }
 
       .tabs-link-selected {
