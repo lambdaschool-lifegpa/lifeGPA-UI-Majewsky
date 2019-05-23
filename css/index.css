@@ -203,6 +203,13 @@ html .container {
   flex-grow: 1;
   background-image: url('../assets/bg-images/background-image-halftone-yellow.png');
 }
+html .container-secondary {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-grow: 1;
+  background-image: url('../assets/bg-images/background-image-brush-yellow-long.png');
+}
 html body {
   padding: 0;
   margin: 0;
@@ -349,14 +356,8 @@ html body .subtitle {
   display: flex;
 }
 .blur-content {
-  position: fixed;
+  filter: blur(5px);
   z-index: -1;
-  width: 110vw;
-  height: 100vh;
-  background-color: #6b1d1d;
-  opacity: 0.4;
-  transform: translateX(-7%);
-  padding-top: 8rem;
 }
 body .header {
   display: flex;
