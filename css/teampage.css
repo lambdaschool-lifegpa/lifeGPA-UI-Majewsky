@@ -400,9 +400,6 @@ body .team-main-section h1 h1::after {
 body .team-main-section h1 .bold {
   font-weight: bold;
 }
-body .team-main-section h1 .accent {
-  color: #ffff00;
-}
 body .team-main-section .container-x {
   background-color: rgba(68, 68, 75, 0.89);
   margin-top: 3rem;
@@ -433,6 +430,9 @@ body .team-main-section .container-x .row .fa-github {
 }
 body .team-main-section .container-x .row .fa-linkedin {
   color: white;
+}
+body .team-main-section .container-x .row .accent {
+  color: #ffff00;
 }
 body .team-main-section .container-x .second-row {
   margin-top: 3rem;
