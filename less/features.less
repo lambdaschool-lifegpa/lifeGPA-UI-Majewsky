@@ -1,0 +1,170 @@
+body {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .features-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media @tablet {
+      .recenter
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 2.8em;
+      margin-bottom: 8vh;
+      margin-top: 5vh;
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+
+    .glider-contain {
+
+      .fa-chevron-left,
+      .fa-chevron-right {
+        color: @white;
+      }
+
+      .glider {
+
+        div {
+          display: flex;
+          justify-content: center;
+        }
+
+        img {
+          border: 15px solid @accent-yellow;
+
+          @media @mobile {
+            height: 80vw;
+          }
+
+          @media @whatdeviceissotiny {
+            height: 50vw;
+          }
+        }
+      }
+    }
+
+    .tabs {
+      width: 100%;
+      margin-top: 9vh;
+      margin-bottom: 9vh;
+
+      .tabs-items {
+        width: 100%;
+        height: 35rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        background-color: @tabs-bg;
+        border: 1px solid @black;
+
+        @media @tablet {
+          height: 50rem;
+        }
+
+        @media @mobile {
+          height: 50rem;
+          padding-top: 20px;
+        }
+
+        @media @whatdeviceissotiny {
+          height: 70rem;
+        }
+      }
+
+      .tabs-item {
+        display: none;
+        width: 75%;
+
+        .tabs-item-title {
+          font-size: 2rem;
+          font-weight: bold;
+          padding-bottom: 10px;
+
+          @media @mobile {
+            font-size: 5vw;
+          }
+
+          .accent {
+            color: @accent-yellow;
+          }
+        }
+
+        .tabs-item-description {
+          line-height: 1.8rem;
+
+          @media @mobile {
+            font-size: 3.5vw;
+          }
+
+          @media @whatdeviceissotiny {
+            line-height: 1rem;
+          }
+
+        }
+
+      }
+
+      .tabs-item-selected {
+        display: block;
+      }
+
+      .tabs-links {
+        display: flex;
+
+        @media @whatdeviceissotiny {
+          max-width: 50vw;
+          flex-wrap: wrap;
+        }
+
+      }
+
+      .tabs-link {
+        padding: 20px 25px;
+        font-size: 1.3rem;
+        background-color: @tabs-link-bg;
+        border-right: 2px solid @black;
+        color: @white;
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+          background-color: @tabs-link-bg;
+          color: @white;
+        }
+
+        @media @mobile {
+          margin-left: 0;
+          padding-left: 3.5vw;
+        }
+
+        @media @tablet {
+          font-size: 2vw;
+        }
+
+      }
+
+      .tabs-link-selected {
+        z-index: 2;
+        background-color: @tabs-highlight;
+        color: @tabs-selected-color;
+        font-weight: bold;
+
+        &:hover {
+          background-color: @tabs-highlight;
+          color: @black;
+        }
+      }
+    }
+  }
+}

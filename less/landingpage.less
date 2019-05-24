@@ -1,0 +1,69 @@
+body {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-main-section {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        @media @tablet {
+            .recenter
+        }
+
+        .image-wrapper {
+            flex-grow: 1;
+            flex-direction: column;
+            display: flex;
+            align-items: stretch;
+            justify-content: flex-end;
+
+            @media @tablet {
+                .hide-element
+            }
+        }
+
+        .bg-girl-side-view {
+            background-image: url(../assets/images/girl_sideways_transparent.png);
+            flex-grow: 1;
+            max-height: 70vh;
+            min-width: 25vw;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+        }
+
+        .call-to-action {
+            display: flex;
+            min-width: 22vw;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 1rem;
+            align-self: center;
+            margin-bottom: 45vh;
+            background-color: darken(@bg-color, 10%);
+            -webkit-box-shadow: 0 0 15px @box-shadow-color;
+            padding: 2rem;
+            border-radius: 3%;
+
+            @media @mobile {
+                margin-top: 3.5rem;
+                margin-left: 0rem;
+                padding-left: 1.5rem;
+            }
+
+            @media @whatdeviceissotiny {
+                padding: 1rem;
+                margin-left: 0px;
+            }
+
+            .btn {
+                .landing-page-button(@accent-yellow, @bg-color)
+            }
+        }
+    }
+}
